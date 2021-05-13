@@ -3,5 +3,8 @@ let button = document.querySelector('#send');
 
 button.addEventListener('click', function() {
     myModal.show();
+
 });
+
+document.getElementById('myInputId').DatePickerX.init();
 
