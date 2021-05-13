@@ -4,92 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 6.1</title>
+    <title>Exercicio 6.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">  
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-    <header class="cabecalho">
+    <header class="container text-center">
         <h1>Currículo</h1>
-        </header>
+    </header>
     <form action="" method="GET"></form>
-        <fieldset class="dados-pessoais">
-            <legend class="legend-dados">Dados Pessoais</legend> 
-            <div class="form-row"> 
-                <div class="line-content">
-                    <label for="input-text">Nome</label>
-                    <input type="text" name="nome" placeholder="digite seu Nome" required id="input-text" maxlength="40">
-                    <br>
-                </div>
-                <div class="line-content">
-                    <label for="input-email">E-mail</label>
-                    <input type="text" name="email" placeholder="digite seu E-mail" required id="input-email" maxlength="50">
-                    <br>
-                </div>
-                <div class="line-content">
-                    <label for="input-cpf">CPF</label>
-                    <input type="text" name="cpf" placeholder="digite seu CPF" required id="input-cpf" maxlength="11">
-                    <br>
-                </div>
-                <div class="line-content" >
-                    <label for="input-cidade">Cidade</label>
-                    <input type="text" name="cidade" placeholder="digite sua Cidade" required id="input-cidade" maxlength="28">
-                    <br>
-                </div>
-                <div class="line-content">
-                    <label for="input-estado">Estado</label>
-                    <select name="estado" id="input-estado" required>                   
+        
+            <p class="lead">Dados Pessoais</p> 
+            <div class="container form-check"> 
+                
+                <label class="form-label" for="input-text">Nome</label>
+                <input class="form-control" type="text" name="nome" placeholder="digite seu Nome" required id="input-text" maxlength="40">
+                <br>
+                            
+                <label class="form-label" for="input-email">E-mail</label>
+                <input class="form-control" type="text" name="email" placeholder="digite seu E-mail" required id="input-email" maxlength="50">
+                <br>
+                            
+                <label class="form-label" for="input-cpf">CPF</label>
+                <input class="form-control" type="text" name="cpf" placeholder="digite seu CPF" required id="input-cpf" maxlength="11">
+                <br>
+                                
+                <label class="form-label" for="input-cidade">Cidade</label>
+                <input class="form-control" type="text" name="cidade" placeholder="digite sua Cidade" required id="input-cidade" maxlength="28">
+                <br>
+                
+                <div class="container form-check"> 
+                <label class="form-label" for="input-estado">Estado</label>
+                    <select class="form-select" name="estado" id="input-estado" required>                   
                         <option value="mg" selected>Minas Gerais</option>
                         <option value="sp">São Paulo</option>
                         <option value="rj">Rio de Janeiro</option>
                         <option value="es">Espirito Santo</option>
-                        <br>
-                </div>
-                <div class="line-content">
-                    <p>Escolha um Tipo</p>
-                    <label for="input-tipo1"></label>
-                    <input type="radio" name="tipo" checked id="input-tipo1" value="tipo1">Casa
-                    <label for="input-tipo2"></label>
-                    <input type="radio" name="tipo" id="input-tipo2" value="tipo2">Apartamento
+                    </select>
                     <br>
                 </div>
+                <div class="container form-check">
+                    <label class="form-check-label" for="input-tipo1"></label>
+                    <input class="form-check-input" type="radio" name="tipo" checked id="input-tipo1" value="tipo1">Casa
+                    <br>
+                </div>
+                <div class="container form-check">    
+                    <label class="form-check-label" for="input-tipo2"></label>
+                    <input class="form-check-input" type="radio" name="tipo" id="input-tipo2" value="tipo2">Apartamento
+                    <br>
+                </div>
+                                
             </div>
-        </fieldset>  
+         
 
-        <fieldset class="dados-pessoais">
-            <legend class="legend-dados">Último Emprego</legend>
-            <div class="form-row">
-                <div class="line-content">
-                    <label for="input-resumo">Resumo do Currículo</label>
-                    <input type="text" name="resumo" required id="input-resumo" maxlength="1000">
+            <p class="lead">Último Emprego</p>
+            <div class="container form-check">
+                
+                <label class="form-label" for="input-resumo">Resumo do Currículo</label>
+                <input class="container form-check" type="text" name="resumo" required id="input-resumo" maxlength="1000">
+                <br>
+                                
+                <label class="form-label" for="input-cargo">Cargo</label>
+                <input class="container form-check" type="text" name="cargo" required id="input-cargo" maxlength="40">
+                <br>   
+                                 
+                <label class="form-label" for="input-descricao-cargo">Descrição do Cargo</label>
+                <textarea class="form-control" name="descricao-cargo" id="input-descricao-cargo" cols="40" rows="10" placeholder="digite sua descrição" maxlength="500"></textarea>
+                <br>    
+            
+                <div class="container form-check">
+                    <label class="form-label" for="input-data-inicio">Data de Início</label>
+                    <input class="container form-check" type="date" name="data-inicio" required id="input-data-inicio">
                     <br>
                 </div>
-                <div class="line-content">
-                    <label for="input-cargo">Cargo</label>
-                    <input type="text" name="cargo" required id="input-cargo" maxlength="40">
-                    <br>   
-                </div>
-                <div class="line-content"> 
-                    <label for="input-descricao-cargo">Descrição do Cargo</label>
-                    <textarea name="descricao-cargo" id="input-descricao-cargo" cols="40" rows="10" placeholder="digite sua descrição" maxlength="500"></textarea>
-                    <br>    
-                </div>
-                <div class="line-content">
-                    <label for="input-data-inicio">Data de Início</label>
-                    <input type="date" name="data-inicio" required id="input-data-inicio">
-                    <br>
-                </div>
-                <div class="line-content"> 
-                    <button class="button-enviar" type="submit">Enviar</button>
-                </div>                
+
+                <div class=""> 
+                    <button id="send" class="btn btn-success" type="submit">Enviar</button>
+                </div> 
+                <br>
             </div>
-        </fieldset>  
+        
 
     </form>
 
-    
+    <div id=myModal class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Alerta!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Tem certeza que deseja prosseguir?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fecha</button>
+              <button type="button" class="btn btn-primary">Salvar e enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
